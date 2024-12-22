@@ -9,6 +9,7 @@ flask-sentiment-app
 ├── app
 │   ├── __init__.py
 │   ├── routes.py
+│   ├── main.py
 │   ├── static
 │   │   └── style.css
 │   └── templates

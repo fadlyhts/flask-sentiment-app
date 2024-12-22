@@ -12,7 +12,6 @@ flask-sentiment-app
 │   ├── static
 │   │   └── style.css
 │   └── templates
-│       ├── base.html
 │       └── index.html
 ├── models
 │   ├── kbest_feature.pickle

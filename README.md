@@ -9,15 +9,17 @@ flask-sentiment-app
 ├── app
 │   ├── __init__.py
 │   ├── routes.py
+│   ├── main.py
 │   ├── static
 │   │   └── style.css
 │   └── templates
-│       ├── base.html
 │       └── index.html
 ├── models
 │   ├── kbest_feature.pickle
-│   └── sentiment_model.joblib
-├── app.py
+│   ├── random_forest_model.joblib
+│   ├── knn_model.joblib
+│   └── naive_bayes_model.joblib
+├── run.py
 ├── requirements.txt
 └── README.md
 ```
@@ -45,7 +47,7 @@ flask-sentiment-app
 
 1. Start the Flask application:
    ```
-   python app.py
+   python run.py
    ```
 
 2. Open your web browser and go to `http://127.0.0.1:5000`.

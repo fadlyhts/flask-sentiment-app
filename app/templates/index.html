@@ -7,27 +7,34 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="container">
-        <h1>Analisis Sentimen Teks</h1>
-        <form method="POST">
-            <div class="form-group">
-                <label for="model">Pilih Model:</label>
-                <select name="model" id="model" required>
-                    <option value="rf">Random Forest</option>
-                    <option value="knn">KNN</option>
-                    <option value="nb">Naive Bayes</option>
-                </select>
+    <div class="page-container">
+        <div class="content-wrap">
+            <div class="container">
+                <h1>Analisis Sentimen Teks</h1>
+                <form method="POST">
+                    <div class="form-group">
+                        <label for="model">Pilih Model:</label>
+                        <select name="model" id="model" required>
+                            <option value="rf">Random Forest</option>
+                            <option value="knn">KNN</option>
+                            <option value="nb">Naive Bayes</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="text" class="fixed-textarea" placeholder="Masukkan teks di sini..." required></textarea>
+                    </div>
+                    <button type="submit">Analisis</button>
+                </form>
+                {% if result %}
+                    <div class="result">
+                        {{ result|safe }}
+                    </div>
+                {% endif %}
             </div>
-            <div class="form-group">
-                <textarea name="text" class="fixed-textarea" placeholder="Masukkan teks di sini..." required></textarea>
-            </div>
-            <button type="submit">Analisis</button>
-        </form>
-        {% if result %}
-            <div class="result">
-                {{ result|safe }}
-            </div>
-        {% endif %}
+        </div>
+        <footer class="footer">
+            <p>Created by Ahmad Fadli Hutasuhut, Maulana Zidan Adi Wibowo dan Muhammad Athar Awliya</p>
+        </footer>
     </div>
 </body>
 </html>

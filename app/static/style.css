@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0; /* Remove body padding */
     background-color: #f0f2f5;
 }
 
@@ -111,4 +111,35 @@ label {
     font-size: 14px;
     resize: none;
     box-sizing: border-box;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; /* Remove margin */
+}
+
+.content-wrap {
+    flex: 1;
+    padding: 20px; /* Add padding here instead */
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    left: 0; /* Ensure footer starts from left edge */
+    right: 0; /* Ensure footer extends to right edge */
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.footer p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
 }

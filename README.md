@@ -16,7 +16,9 @@ flask-sentiment-app
 │       └── index.html
 ├── models
 │   ├── kbest_feature.pickle
-│   └── sentiment_model.joblib
+│   ├── random_forest_model.joblib
+│   ├── knn_model.joblib
+│   └── naive_bayes_model.joblib
 ├── app.py
 ├── requirements.txt
 └── README.md

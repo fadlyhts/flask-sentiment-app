@@ -8,7 +8,6 @@ This project is a web application built using Flask that classifies input text i
 flask-sentiment-app
 ├── app
 │   ├── __init__.py
-│   ├── routes.py
 │   ├── main.py
 │   ├── static
 │   │   └── style.css

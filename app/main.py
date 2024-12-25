@@ -84,7 +84,7 @@ def predict_sentiment(input_text, model_choice='rf'):
     
     # Predict using selected model
     prediction = selected_model['model'].predict(text_vector)[0]
-    sentiment = 'Sentimen Positif' if prediction == 'positive' else 'Sentimen Negatif'
+    sentiment = 'Sentimen Positif' if prediction == 'Positive' else 'Sentimen Negatif'
     
     return {
         'steps': {

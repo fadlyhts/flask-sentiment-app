@@ -1,4 +1,4 @@
-# Flask Sentiment Analysis Web Application
+# Flask Sentiment Analysis Web Application For Customer Review
 
 This project is a web application built using Flask that classifies input text into positive or negative sentiment. It utilizes a pre-trained sentiment analysis model and a vocabulary file for feature extraction.
 

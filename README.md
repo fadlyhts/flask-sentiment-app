@@ -19,6 +19,7 @@ flask-sentiment-app
 │   ├── knn_model.joblib
 │   └── naive_bayes_model.joblib
 ├── run.py
+├── render.yaml
 ├── requirements.txt
 └── README.md
 ```
